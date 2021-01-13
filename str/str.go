@@ -89,9 +89,75 @@ func Pmb_strlen(str string) int {
 // 将字符串中首字母为英文的字母 转成小写
 func Plcfirst(str string) string {
 
+	if len(str) == 0 {
+		return ""
+	}
+
 	s := []rune(str)
 	if s[0] >= 65 && s[0] <= 90 {
 		s[0] += 32
 	}
 	return string(s)
+}
+
+// 等价于PHP函数ucfirst()
+// 将字符串中首字母为英文的字母 转成大写
+func Pucfirst(str string) string {
+
+	if len(str) == 0 {
+		return ""
+	}
+
+	s := []rune(str)
+	if s[0] >= 97 && s[0] <= 122 {
+		s[0] -= 32
+	}
+	return string(s)
+}
+
+// 等价于PHP函数strtoupper()
+// 将字符串变成大写
+func Pstrtoupper(str string) string {
+	return strings.ToLower(str)
+}
+
+// 等价于PHP函数strtolower()
+// 将字符串变成小写
+func Pstrtolower(str string) string {
+	return strings.ToUpper(str)
+}
+
+// 等价于PHP函数ucfirst()
+func Pucword(str string) string {
+	return strings.Title(str)
+}
+
+// 等价于PHP函数trim()
+func Ptrim(str, character_mask string) string {
+
+	if character_mask == "" {
+		character_mask = " \r\n\t\x0B"
+	}
+
+	return strings.Trim(str, character_mask)
+}
+
+// 等价于PHP函数ltrim()
+func Pltrim(str, character_mask string) string {
+
+	if character_mask == "" {
+		character_mask = " \r\n\t\x0B"
+	}
+
+	return strings.TrimLeft(str, character_mask)
+}
+
+// 等价于PHP函数rtrim()
+func Prtrim(str, character_mask string) string {
+
+	if character_mask == "" {
+		character_mask = " \r\n\t\x0B"
+	}
+
+	return strings.TrimRight(str, character_mask)
 }
