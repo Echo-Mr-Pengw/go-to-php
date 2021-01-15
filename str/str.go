@@ -3,6 +3,8 @@
 package str
 
 import (
+	"crypto/md5"
+	"crypto/sha1"
 	"fmt"
 	"reflect"
 	"strings"
@@ -161,3 +163,52 @@ func Prtrim(str, character_mask string) string {
 
 	return strings.TrimRight(str, character_mask)
 }
+
+// 等价于PHP函数chop()
+func Pchop(str, character_mask string) string {
+	return Prtrim(str, character_mask)
+}
+
+// 等价于PHP函数md5()
+func Pmd5(str string) string {
+	return fmt.Sprintf("%x", md5.Sum([]byte(str)))
+}
+
+// 等价于PHP函数sha1()
+func Psha1(str string) string {
+	return (fmt.Sprintf("%x", sha1.Sum([]byte(str))))
+}
+
+// 等价于PHP函数ord
+func Pord(str string) int {
+
+	if str == "" {
+		return 0
+	}
+
+	s := []rune(str)
+	return int(s[0])
+}
+
+// ord函数的升级版，转化全部字符
+func Pallord(str string) interface{}{
+	return []rune(str)
+}
+
+// 等价于PHP函数chr
+func Pchr(ascii int32) string {
+	return string(ascii)
+}
+
+// 等价于PHP函数echo
+func Pecho(a ...interface{}) {
+	fmt.Print(a...)
+}
+
+// 等价于PHP函数var_dump()
+//func Pvar_dump(a ...interface{}) {
+//	for _, v := range a {
+//		//fmt.Printf("%T %x \r\n", v, v)
+//		fmt.Sprintf("%T %x", v, v)
+//	}
+//}

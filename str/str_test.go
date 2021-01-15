@@ -113,3 +113,49 @@ func TestPrtrim(t *testing.T) {
 	rtrimStr := Prtrim(str, character_mask)
 	t.Log(rtrimStr, len(str), len(rtrimStr))
 }
+
+// Pchop使用案例
+func TestPchop(t *testing.T) {
+	str := "chop()是rtrim()的别名  "
+	t.Log(Pchop(str, " "))
+}
+
+// Pmd5使用案例
+func TestPmd5(t *testing.T) {
+	str := ""
+	t.Log(Pmd5(str))
+}
+
+// Psha1使用案例
+func TestPsha1(t *testing.T) {
+	str := ""
+	t.Log(Psha1(str))
+}
+
+// Pord使用案例
+func TestPord(t *testing.T) {
+	str := " "
+	t.Log(Pord(str))
+}
+
+// Pallord使用案例
+func TestPallord(t *testing.T) {
+	str := "   "
+	t.Log(Pallord(str))
+}
+
+// Pchr使用案例
+func TestPchr(t *testing.T) {
+	t.Log(Pchr(9711))
+}
+
+// Pecho使用案例
+func TestPecho(t *testing.T) {
+	Pecho(1, "232", "cdc")
+	Pecho("heellp")
+}
+
+// Pvar_dump()使用案例
+//func TestPvar_dump(t *testing.T) {
+//	Pvar_dump(1, "h")
+//}
