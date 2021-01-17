@@ -206,9 +206,48 @@ func Pecho(a ...interface{}) {
 }
 
 // 等价于PHP函数var_dump()
-//func Pvar_dump(a ...interface{}) {
-//	for _, v := range a {
-//		//fmt.Printf("%T %x \r\n", v, v)
-//		fmt.Sprintf("%T %x", v, v)
+func Pvar_dump(a ...interface{}) {
+	for _, v := range a {
+		fmt.Printf("%T ", v)
+		fmt.Println(v)
+	}
+}
+
+// 等价于PHP函数print()
+func Pprint(a interface{}) {
+	fmt.Println(a)
+}
+
+// 等价于PHP函数str_repeat()
+func Pstr_repeat(input string, multiplier int) string {
+	return strings.Repeat(input, multiplier)
+}
+
+// 等价于PHP函数str_shuffle()
+//func Pstr_shuffle(str string) string {
+//
+//	l := len(str)
+//	if l < 0 {
+//		return ""
 //	}
+//}
+
+// 等价于PHP函数str_split
+//func Pstr_split(str string, splitLen int) []string {
+//	var s []string
+//	var l = len(str)
+//
+//	if l == 0 || splitLen == 0{
+//		return s
+//	}
+//
+//	r := []rune(str)
+//	if splitLen == 1 || splitLen >= l {
+//		return r
+//	}
+//
+//	for _, v := range r {
+//		s = append(s, string(v))
+//	}
+//	return s
 //}

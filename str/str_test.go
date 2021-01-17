@@ -156,6 +156,16 @@ func TestPecho(t *testing.T) {
 }
 
 // Pvar_dump()使用案例
-//func TestPvar_dump(t *testing.T) {
-//	Pvar_dump(1, "h")
-//}
+func TestPvar_dump(t *testing.T) {
+	Pvar_dump(1, "h")
+}
+
+// Pprint使用案例
+func TestPprint(t *testing.T) {
+	Pprint("hello world")
+}
+
+// Pstr_repeat使用案例
+func TestPstr_repeat(t *testing.T) {
+	t.Log(Pstr_repeat("a", -1))
+}
