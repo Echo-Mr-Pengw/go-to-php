@@ -47,7 +47,6 @@
 | Pvar_dump(`a ...`interface{})                               | var_dump                  |
 | Pprint(`a` interface{})                                     | print                     |
 | Pstr_repeat(`input` string , `multiplier` int) string       | str_repeat                |
-|                                                             |                           |
 
 #### 变量处理相关函数
 
@@ -63,18 +62,3 @@
 | Pis_long(`variable` interface{}) bool    | is_long       |
 | Pis_string(`variable` interface{}) bool  | is_string     |
 | Pis_numeric(`variable` interface{}) bool | is_numeric    |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-|                                          |               |
-
