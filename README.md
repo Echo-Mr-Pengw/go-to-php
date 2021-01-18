@@ -2,6 +2,18 @@
 
 用Golang封装PHP常用的函数，为了区分PHP与Go中的函数，go-to-php封装的函数，都是在对应的PHP函数的前面加上大写的`P`。`Pallord`函数除外
 
+#### 安装
+
+1. 字符串相关包
+
+`go get -u github.com/Echo-Mr-Pengw/go-to-php/str`
+
+2. 数组相关包
+
+`开发中`
+
+.......
+
 #### 字符串相关函数
 
 | go-to-php封装函数                                           | 对应的PHP函数             |
