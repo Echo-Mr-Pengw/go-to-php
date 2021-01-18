@@ -8,9 +8,15 @@
 
 `go get -u github.com/Echo-Mr-Pengw/go-to-php/str`
 
-2. 数组相关包
+2. 变量相关处理包
+
+`go get -u github.com/Echo-Mr-Pengw/go-to-php/variable`
+
+3. 数组相关包
 
 `开发中`
+
+4. 其它
 
 .......
 
@@ -43,7 +49,32 @@
 | Pstr_repeat(`input` string , `multiplier` int) string       | str_repeat                |
 |                                                             |                           |
 
+#### 变量处理相关函数
 
-
-
+| go-to-php封装函数                        | 对应的PHP函数 |
+| ---------------------------------------- | ------------- |
+| Pgettype(`variable` interface{}) string  | gettype       |
+| Pis_array(`variable` interface{}) bool   | is_array      |
+| Pis_bool(`variable` interface{}) bool    | is_bool       |
+| Pis_double(`variable` interface{}) bool  | is_double     |
+| Pis_float(`variable` interface{}) bool   | is_float      |
+| Pis_int(`variable` interface{}) bool     | is_int        |
+| Pis_integer(variable interface{}) bool   | is_integer    |
+| Pis_long(`variable` interface{}) bool    | is_long       |
+| Pis_string(`variable` interface{}) bool  | is_string     |
+| Pis_numeric(`variable` interface{}) bool | is_numeric    |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
+|                                          |               |
 
