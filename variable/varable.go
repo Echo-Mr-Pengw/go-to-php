@@ -97,7 +97,22 @@ func Pis_numeric(variable interface{}) bool {
 	return b
 }
 
-
+// 等价于PHP函数empty
+//func Pempty(variable interface{}) bool {
+//	var b bool
+//	variableType := Pgettype(variable)
+//	if variableType == "string" || variable == "" {
+//		b = false
+//	}
+//
+//	if variableType == "int" || variable == 0 {
+//		b = false
+//	}
+//
+//	if variableType == "bool" || variable == false {
+//		b = false
+//	}
+//}
 
 
 
