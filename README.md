@@ -12,11 +12,15 @@
 
 `go get -u github.com/Echo-Mr-Pengw/go-to-php/variable`
 
-3. 数组相关包
+3. 打印输出相关包
+
+`go get -u github.com/Echo-Mr-Pengw/go-to-php/output`
+
+4. 数组相关包
 
 `开发中`
 
-4. 其它
+5. 其它
 
 .......
 
@@ -43,9 +47,6 @@
 | Pord(`str` string) int                                      | ord                       |
 | Pallord(`str` string) interface{}                           | 转化全部字符，ord的升级版 |
 | Pchr(`ascii` int32) string                                  | chr                       |
-| Pecho(`a ...`interface{})                                   | echo                      |
-| Pvar_dump(`a ...`interface{})                               | var_dump                  |
-| Pprint(`a` interface{})                                     | print                     |
 | Pstr_repeat(`input` string , `multiplier` int) string       | str_repeat                |
 
 #### 变量处理相关函数
@@ -62,3 +63,11 @@
 | Pis_long(`variable` interface{}) bool    | is_long       |
 | Pis_string(`variable` interface{}) bool  | is_string     |
 | Pis_numeric(`variable` interface{}) bool | is_numeric    |
+
+#### 变量处理相关函数
+
+| go-to-php封装函数                        | 对应的PHP函数 |
+| ---------------------------------------- | ------------- |
+| Pecho(`a ...`interface{})                | echo          |
+| Pvar_dump(`a ...`interface{})            | var_dump      |
+| Pprint(`a` interface{})                  | print         |
