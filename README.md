@@ -18,11 +18,11 @@
 
 4. 数组相关包
 
-`开发中`
+`go get -u github.com/Echo-Mr-Pengw/go-to-php/array`
 
-5. 其它
+5. 其它包
 
-.......
+`开发中....`
 
 #### 字符串相关函数
 
