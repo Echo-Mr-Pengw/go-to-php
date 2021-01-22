@@ -71,3 +71,8 @@
 | Pecho(`a ...`interface{})                | echo          |
 | Pvar_dump(`a ...`interface{})            | var_dump      |
 | Pprint(`a` interface{})                  | print         |
+
+#### 数组相关函数
+| go-to-php封装函数                        | 对应的PHP函数 |
+| ---------------------------------------- | ------------- |
+| Parray_change_key_case(`m` map[string]interface{}) (map[string]interface{})|array_change_key_case|
